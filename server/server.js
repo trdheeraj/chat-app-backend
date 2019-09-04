@@ -15,8 +15,8 @@ app.use(express.static(path.join(__dirname, 'client/slack/build')))
 // });
 
 const chatkit = new Chatkit.default({
-  instanceLocator: 'v1:us1:4811d398-69b5-472e-bfcf-e24d61e97f14',
-  key: '26a95160-a5cc-4454-98fe-e701e72acc8f:oxCxu+Iszm6UDQAdm8IHXQl6XJy8DspZl+gZfuSyZJU='
+  instanceLocator: 'v1:us1:aadd6ca1-2c57-4a8b-9acf-bafee27d8fc1',
+  key: '57d488c5-ae6e-4b2e-ba6e-b084f0fbf626:gnuA4U5NuEhfkyUrJ2Tu7dnThHp0/i9oP3ZzfTSrTOE='
 });
 
 app.use(cors());
@@ -33,7 +33,7 @@ app.post('/users', (req, res) => {
     })
     .then(() => {
       chatkit.addUsersToRoom({
-        roomId: 'afa1c12e-b196-4bb4-b940-a1af439328be',
+        roomId: '8ec10840-ba30-4181-a450-41bf6cb70ea3',
         userIds: [userId]
       })
         .then(() => {
